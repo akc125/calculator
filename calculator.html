@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/calculator.css">
+</head>
+<body>
+    <div>
+   <input id="value" type="number"><br> 
+   <button onclick="show(1)">1</button>
+   <button onclick="show(2)">2</button>
+   <button onclick="show(3)">3</button>
+   <button onclick="show(4)">4</button><br>
+   <button onclick="show(5)">5</button>
+   <button onclick="show(6)">6</button>
+   <button onclick="show(7)">7</button>
+   <button onclick="show(8)">8</button><br>
+   <button onclick="show(9)">9</button>
+   <button onclick="show('.')">.</button>
+   <button onclick="show(0)">0</button>
+   <button onclick="cl()">C</button><br>
+ 
+   <button onclick="minus()">-</button>
+   <button onclick="multiply()">*</button>
+   <button onclick="division()">/</button>
+   <button style="height: 95px; position:absolute; left: 185px; top: 254px; background-color: rgb(175, 75, 108);" onclick="plus()">+</button><br>
+   <button onclick=>u</button>
+  
+   <button onclick=>m</button>
+   <button onclick="calculate()">=</button>
+</div>
+
+
+<script>
+doc="";
+last="";
+
+function cl(){
+
+
+document.getElementById("value").value="";
+}
+function show(numb){
+textb=document.getElementById("value");
+firstv=textb.value;
+secondv=firstv+numb;
+document.getElementById("value").value=secondv;
+}
+function plus(){
+doc="+";
+last=document.getElementById("value").value;
+document.getElementById("value").value="";
+}
+function minus(){
+doc="-";
+last=document.getElementById("value").value;
+document.getElementById("value").value="";
+}
+function multiply(){
+doc="*";
+last=document.getElementById("value").value;
+document.getElementById("value").value="";
+}
+function division(){
+doc="/";
+last=document.getElementById("value").value;
+document.getElementById("value").value="";
+}
+function clear(){
+
+document.getElementById("value").value="";
+}
+
+
+
+
+
+
+
+function calculate(){
+
+result=0;
+if(doc == "+"){
+    current=document.getElementById("value").value;
+result=Number(last) + Number(current);
+document.getElementById("value").value=result;
+}else if(doc == "-"){
+    current=document.getElementById("value").value;
+result=Number(last) - Number(current);
+document.getElementById("value").value=result;
+}else if(doc == "*"){
+    current=document.getElementById("value").value;
+result=Number(last) * Number(current);
+document.getElementById("value").value=result;
+}else if(doc == "/"){
+    current=document.getElementById("value").value;
+result=Number(last) / Number(current);
+document.getElementById("value").value=result;}
+
+
+}
+
+
+
+
+console.log(current)
+
+</script>
+
+
+</body>
+</html>
