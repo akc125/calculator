@@ -1,18 +1,18 @@
 div{
-    width: 250px;
-    height: 370px;
-    background-color: blueviolet;
+    width: 260px;
+    height: 380px;
+    background-color:blueviolet;
     position: relative;
     left: 20px;
     top: 50px;
     border-radius: 8px;
-    box-shadow: 1px 1px 5px rgb(68, 66, 66);
+    box-shadow: 5px 5px 10px rgb(20, 19, 19) ;
 }
 input{
     width: 220px;
     height: 35px;
     position: relative;
-    left: 10px;
+    left: 14px;
     top: 30px;
     font-size: 20px;
     text-align: right;
@@ -23,13 +23,14 @@ button{
     width: 40px;
     position: relative;
     top: 50px;
-    left: 10px;
+    left: 14px;
     margin: 7px;
     font-size: 20px;
     border-radius: 5px;
-  
+    box-shadow: 1px 1px 5px rgb(82, 78, 78) inset;
 }
 button:hover{
-    box-shadow: 1px 1px 5px rgb(82, 78, 78);
-    transform: scale(1.2);
+    box-shadow: 1px 1px 5px rgb(82, 78, 78) inset;
+    transform: scale(0.9);
+  
 }
