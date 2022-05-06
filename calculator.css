@@ -27,7 +27,7 @@ button{
     margin: 7px;
     font-size: 20px;
     border-radius: 5px;
-    box-shadow: 1px 1px 5px rgb(82, 78, 78) inset;
+    box-shadow: 1px 1px 5px rgb(83, 81, 81) inset;
 }
 button:hover{
     box-shadow: 1px 1px 5px rgb(82, 78, 78) inset;
